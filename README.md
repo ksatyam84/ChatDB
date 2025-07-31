@@ -27,3 +27,37 @@ ChatDB empowers users to ask questions and make changes in SQL (MySQL) or NoSQL 
 Install Python dependencies:
 
 
+### 3. Environment setup
+
+Set environment variables or edit connection info in `app.py`:
+
+
+### 4. Run the Backend
+
+
+### 5. Run the Frontend
+
+
+---
+
+## Usage
+
+1. Open the Streamlit app.
+2. Select "mysql" or "mongodb".
+3. Ask questions like:
+   - MySQL: `List all customers who ordered in 2024.`
+   - MongoDB: `Find users with more than 10 purchases.`
+4. See results instantly!
+
+---
+
+## Notes
+
+- The LLM + RAG logic is fully included, using schema/context and OpenAI GPT-4o.
+- For production, make `nlp_to_query()` handle output parsing more robustly and add authentication.
+- Never eval() untrusted LLM code in production; prefer safe JSON outputs.
+
+---
+
+
+
